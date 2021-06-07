@@ -47,3 +47,14 @@ print(data_type_boolean)
 # -> <class 'bool'>
 print(data_type_from_variable)
 # -> <class 'int'>
+
+# 4. Basic Arithmetic in Python
+
+# Basic math - does anything inside ( ) first - multiplication * - division / - addition + - subtraction -
+
+num1 = 3
+num2 = 10
+
+answer = num2%num1 # % modulus operator
+
+print(answer)
