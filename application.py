@@ -58,3 +58,29 @@ num2 = 10
 answer = num2%num1 # % modulus operator
 
 print(answer)
+
+# 5. Indexing and Slicing Strings
+
+new_sentence = "this is a sentence"
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+# /n = new line
+# index's of the sentence t-0 h-1 i-2 s-3 ' '-4 i-5 s-6 ' '-7 a-8 ' '-9 s-10 e-11 n-12 t-13 e-14 n-15 c-16 e-17
+
+print(new_sentence[0]) # the first index of new_sentence is t with an index of 0
+# first character will always be 0
+print(new_sentence[-1]) # -1 will give me the last character in the string
+
+print(new_sentence[0:4]) # will grab a word from the sentence - s is index 3 but it is non inclusive so need to go one step further and put 4
+
+# ON MY OWN - grab the word "is" from new_sentence
+
+print(new_sentence[5:7]) # = is
+print(new_sentence[8]) # = a
+print(new_sentence[10:18]) # = sentence
+print(alphabet[3:]) # defg... gets the starting position and goes to the end because I didn't give an end position
+# This is known as slicing
+
+# Getting every other character of the alphabet
+
+print(alphabet[0:26:2])
