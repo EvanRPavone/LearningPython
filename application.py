@@ -6,7 +6,7 @@ print("Hello World")
 
 # A Variable is a pointer to a given value
 # A reserved memory location that stores a value
-# Method (print) - prints the msg variable value
+# Function (print) - prints the msg variable value
 print('This is the next statement')
 # Runs Line by line
 # Variable is a container
@@ -84,3 +84,19 @@ print(alphabet[3:]) # defg... gets the starting position and goes to the end bec
 # Getting every other character of the alphabet
 
 print(alphabet[0:26:2])
+
+# 6. Basic String Methods
+
+string_sentence = "this is a sentence that is a string." #performs first
+
+string_sentence = string_sentence.upper() # upper method - performs second
+
+print(string_sentence) #performs third
+
+string_sentence = "this is a sentence that is a string."
+
+print(string_sentence.upper()) # this will also work
+print(string_sentence.capitalize()) # Capitalize the first character and lowercases everything else
+print(string_sentence.isdigit()) # Boolean - if the characters are not numbers it will return false.
+print(string_sentence.isalnum()) # letters and numbers - will return false because of spaces
+print(string_sentence.startswith("this"))
