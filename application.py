@@ -100,3 +100,11 @@ print(string_sentence.capitalize()) # Capitalize the first character and lowerca
 print(string_sentence.isdigit()) # Boolean - if the characters are not numbers it will return false.
 print(string_sentence.isalnum()) # letters and numbers - will return false because of spaces
 print(string_sentence.startswith("this"))
+
+# 7. Formatting Strings Using the Format Method
+
+sentence = "The sum of 5 + 10 is {0}".format(50) # you can pass anything. -> The sum of 5+10 is 50 -> The sum of 5+10 is happy day
+print(sentence)
+
+sentence = "The sum of {0} + {1} is {2}".format(10, 15, 25)
+print(sentence)
