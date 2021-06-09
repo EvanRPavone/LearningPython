@@ -60,3 +60,12 @@ print(my_list)
 # change roberts name to joe
 my_list[6][2][1] = "Joe"
 print(my_list)
+
+# 3. Finding index positions in Lists and Counting Duplicates
+
+my_list = ['a', 'b', 'c', 'd']
+idx_pos = my_list.index('c') # return the index position of c
+print(idx_pos)
+my_list = ['a', 'b', 'c', 'd', 'c', 'c']
+c_count = my_list.count('c') # How many times c is in the list
+print(c_count)
