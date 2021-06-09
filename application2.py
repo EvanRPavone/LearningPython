@@ -35,3 +35,12 @@ new_list = my_list + another_list
 print(new_list) # will print one big list
 my_list.append(another_list)
 print(my_list)
+
+# List assignment
+assign_list_1 = ['b', 'd', 'a', 'z', 'x']
+assign_list_2 = [1,2,3,4,5]
+assign_list_1.sort()
+assign_list_1.reverse()
+assign_list_2.reverse()
+final_list = assign_list_1[2:] + assign_list_2[2:]
+print(final_list) # ['d', 'b', 'a', 3, 2, 1]
