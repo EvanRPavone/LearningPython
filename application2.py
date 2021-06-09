@@ -44,3 +44,19 @@ assign_list_1.reverse()
 assign_list_2.reverse()
 final_list = assign_list_1[2:] + assign_list_2[2:]
 print(final_list) # ['d', 'b', 'a', 3, 2, 1]
+
+# 2. Accessing Elements in Nested Lists
+
+my_list = ['a', 'b', 'c', 1,2,3, ['apple', 'orange', 'banana'], 'd']
+extracted_list = my_list[6] #grabs the list inside the list
+print(extracted_list)
+extracted_fruit = my_list[6][2] # grabs the list inside the list and then grabs the banana
+print(extracted_fruit)
+my_list = ['a', 'b', 'c', 1,2,3, ['apple', 'orange',['John', 'Robert'], 'banana'], 'd']
+extracted_name = my_list[6][2][1]
+print(extracted_name)
+my_list[2] = "computer"
+print(my_list)
+# change roberts name to joe
+my_list[6][2][1] = "Joe"
+print(my_list)
