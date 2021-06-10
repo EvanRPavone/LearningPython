@@ -86,7 +86,7 @@ print(some_data)
 print(type(some_data)) # <class 'tuple'>
 print(type(extracted)) # <class 'list'>
 
-# Dictionaries
+# 5. Dictionaries
 
 # Key (Word) and Value (Definition)
 # Not position oriented - Dictionaries are key oriented
@@ -125,3 +125,15 @@ people_weight_dict.clear() # can do this to lists too. Will clear the dictionary
 print(people_weight_dict)
 people_weight_dict['99'] = "some data" # adding new data to the dictionary
 print(people_weight_dict)
+
+# 6. Comparison Operators
+
+# == , < >, >= <=, !=
+
+10 == 10 # not assigning. is 10 equal to 10. Can use strings as well. Case Sensitive. Same as other languages I know. Boolean expressions
+print(10 == 10)
+print ((5 < 10) or (5 != 5) and ('8' == '8')) # True
+print ((5 < 4) or (5 != 5) and ('8' == '8')) # False
+
+condition = not (5 == 5)
+print(type(condition)) # <class 'bool'>
