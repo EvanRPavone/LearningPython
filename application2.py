@@ -85,3 +85,43 @@ print(count)
 print(some_data)
 print(type(some_data)) # <class 'tuple'>
 print(type(extracted)) # <class 'list'>
+
+# Dictionaries
+
+# Key (Word) and Value (Definition)
+# Not position oriented - Dictionaries are key oriented
+# Format: dict = {'key': 'value'}
+# Cannot Sort
+
+dict = {'k1': 'some data', 'k2': 'Evan Pavone'}
+value = dict['k1']
+value_2 = dict['k2']
+print(value)
+print(value_2)
+dict['k2'] = "New Value"
+print(dict) # {'k1': 'some data', 'k2': 'New Value'}
+
+people_weight_dict = {'john': 134, 
+                      'Evan': 120, 
+                      'Robert': 165, 
+                      'items': ['orange', {'k1': 'some value'}],
+                      'tuple': (1,2,3,4,5)
+                      }
+print(people_weight_dict)
+people_weight_dict['john'] = 170
+weight_of_evan = people_weight_dict.pop('Evan') # will remove Evan - Must give the key you want to pop out.
+items_dict = people_weight_dict['items'][1]['k1'] # will return some value
+my_tuple = people_weight_dict['tuple']
+print(my_tuple)
+tuple_removed = people_weight_dict.pop('tuple')
+print(people_weight_dict)
+print(tuple_removed)
+print(items_dict)
+print(weight_of_evan)
+print(people_weight_dict)
+print(people_weight_dict['items'])
+print(people_weight_dict['items'][1])
+people_weight_dict.clear() # can do this to lists too. Will clear the dictionary
+print(people_weight_dict)
+people_weight_dict['99'] = "some data" # adding new data to the dictionary
+print(people_weight_dict)
