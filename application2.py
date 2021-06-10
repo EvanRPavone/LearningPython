@@ -69,3 +69,19 @@ print(idx_pos)
 my_list = ['a', 'b', 'c', 'd', 'c', 'c']
 c_count = my_list.count('c') # How many times c is in the list
 print(c_count)
+
+# 4. Tuples
+
+# Very similar to list but they cannot be modified
+
+my_tuple = (1,2,3, "Some Data", "Some Data", "Some Data", [1,2,3]) # Tuple with a list inside
+# my_tuple[3] = "other data"  TypeError: 'tuple' object does not support item assignment
+count = my_tuple.count("Some Data")
+extracted = my_tuple[6] # extracts the list [1,2,3]
+my_tuple[6][2] = "New Value" # You can still modify lists inside tuples
+some_data = my_tuple[3:6] # will return all Some Data and returns it as a tuple
+print(my_tuple)
+print(count)
+print(some_data)
+print(type(some_data)) # <class 'tuple'>
+print(type(extracted)) # <class 'list'>
