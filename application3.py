@@ -28,3 +28,23 @@ def remainder(x, y):
     
 answer = remainder(42, 15)
 print(answer)
+
+# 2. *args and **kwargs in Python
+
+def mysum(*args): # to have an unlimited number of arguments put *args in () instead
+    return sum(args)
+
+result = mysum(10,20,30,1,1,1,1,10,5,6)   
+
+print(result)
+
+def key_value_func(**kwargs):
+    print(kwargs)
+    print(kwargs.keys())
+    print(kwargs.values())
+    print(kwargs.get("weight"))
+    print(kwargs.get("name"))
+    print(kwargs.get("age"))
+    print(kwargs.get("address")) # no value assigned to the key address - will return
+    
+key_value_func(name="mike", weight=200, age=27)
