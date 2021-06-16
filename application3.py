@@ -48,3 +48,16 @@ def key_value_func(**kwargs):
     print(kwargs.get("address")) # no value assigned to the key address - will return
     
 key_value_func(name="mike", weight=200, age=27)
+
+# 3. Basics of Variable Scope
+
+age = 23 # Global Scope
+
+print(age)
+
+def increase_age():
+    age = 30 # local scope
+    
+increase_age() # age is local to this function only
+    
+print(age) # 23 Global Scope
