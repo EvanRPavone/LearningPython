@@ -61,3 +61,19 @@ def increase_age():
 increase_age() # age is local to this function only
     
 print(age) # 23 Global Scope
+
+# 4. Scope and Nested Functions
+
+def increase_age_again():
+    age = 30
+    
+    # defining a nested function
+    def add_4_to_age(age):
+        age = age + 4
+        print("NESTED METHOD: " + str(age))
+        
+    # calling the nested function
+    add_4_to_age(age)
+    print(age) # will print 30 not 34 - outside of the scope of add_4 - in the scope of increase_age_again
+        
+increase_age_again()
