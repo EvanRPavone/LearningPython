@@ -35,4 +35,18 @@ if "Evan" in my_list or "Robert" in my_list or "Pavone" in my_list or "Bobby" in
 else:
     print("These people are not on the list")
     
-# 2. 
+# 2. Control Flow: Elif statements
+
+# if something takes place do this, if something else takes place do that, if something else takes place do that etc..
+
+animal = "ape"
+
+if animal == "cow":
+    print("eats grass")
+elif animal == "bird":
+    print("eats seeds")
+elif animal == "monkey" or animal == "ape":
+    print("eats bananas")
+else:
+    print("We don't know what the animal eats")
+
