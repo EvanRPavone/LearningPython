@@ -223,3 +223,39 @@ for item in enumerate(words, 1):
     (4, 'is')
     (5, 'Evan')
     """
+    
+# 8. More Handy Functions and the Random Package
+
+list_a = ['a','b','c','d','e','f']
+list_b = [1,2,3,4,5,6]
+list_c = [99,98,97,96,95,94]
+
+zipped_list = list(zip(list_a, list_b, list_c)) 
+print(zipped_list) # returns [('a', 1, 99), ('b', 2, 98), ('c', 3, 97), ('d', 4, 96), ('e', 5, 95), ('f', 6, 94)]
+for a,b,c in zipped_list:
+    print(a)
+    print(b)
+    print(c)
+    
+print('z' in list_a)
+
+print(max(list_c))
+print(min(list_c))
+print(max(list_a))
+print(min(list_a))
+
+from random import randint
+from random import shuffle
+
+random_number = randint(0,1000)
+print(random_number)
+
+shuffle(list_a)
+print(list_a)
+
+# Shuffle a list that has numbers up to 100
+
+big_list = list(range(101))
+shuffle(big_list)
+print(big_list)
+
