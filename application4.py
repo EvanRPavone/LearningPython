@@ -143,3 +143,43 @@ while x < 10:
 else:
     print("x is not less than 10")
     
+# 6. Looping and Unpacking with Dictionaries and Touples
+
+# Dictionary
+
+employees = {'mike': 27000, 'john': 65000, 'rebecca': 60000, 'tom': 100000}
+
+for person in employees:
+    print(person) # by default the key will be printed. The employee names
+
+for entry in employees.items():
+    print(entry) # will get all the salaries for each employee. returns a bunch of touples which returns the key value pair
+    
+for salary in employees.values():
+    print(salary) # will return only the salary which are the values
+    
+for employee, salary in employees.items(): # this is known as unpacking
+    print(employee)
+    print(salary)
+    """
+    mike
+    27000
+    john
+    65000
+    rebecca
+    60000
+    tom
+    100000
+    """
+
+employee_touple = [('mike', 27000, 29), ('john', 65000, 47), ('rebecca', 60000, 62), ('tom', 100000, 29)]
+
+for (employee, salary, age) in employee_touple:
+    print(employee + " gets paid $" + str(salary) + " a year" + " and is " + str(age) + " years old")
+    """
+    mike gets paid $27000 a year and is 29 years old
+    john gets paid $65000 a year and is 47 years old
+    rebecca gets paid $60000 a year and is 62 years old
+    tom gets paid $100000 a year and is 29 years old
+    """
+
