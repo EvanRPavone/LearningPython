@@ -108,3 +108,16 @@ for char in greeting:
     
 print("Loop is terminated by this point")
 
+# 4. Pass Statement in For Loops
+
+my_objects = ['computer', 'car', 'bottle', 'tv']
+
+for object in my_objects:
+    # python expects some type of instruction, cant be left empty
+    pass # Placeholder. does nothing except keeps the structure. Ex. telling a coder to come to this next week and finish it but keeps the code running
+
+print("pass statement used here")
+# for loops doesn't need to have a variable, it can use a list, string, touple, etc.. too.
+
+for object in ['computer', 'car', 'bottle', 'tv']:
+    print(object)
