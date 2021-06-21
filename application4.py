@@ -183,3 +183,43 @@ for (employee, salary, age) in employee_touple:
     tom gets paid $100000 a year and is 29 years old
     """
 
+# 7. Range, Enumeratem and Zip Functions
+"""
+list() - function that turns whatever into a list
+range() - can loop through until the given index/number is reached. can designate a start number (1), an end number (11), and step (2) which will give the even numbers
+zip() - used to Zip 2 things together
+enumerate() - will numerate each item in the list
+"""
+
+word = "Hello"
+
+for letter in list(word):
+    print(letter)
+    
+for num in range(2,11,2):
+    print(num)
+    
+mynum = [1,2,3,4,5,6,7,8,9]
+words = ['hello', 'my', 'name', 'is', 'Evan']
+print("Zip")
+for item in zip(mynum, words):
+    print(item)
+    """
+    Knowns as enumeration
+    (1, 'hello')
+    (2, 'my')
+    (3, 'name')
+    (4, 'is')
+    (5, 'Evan')
+    """
+print("Enumerate")
+
+for item in enumerate(words, 1):
+    print(item)
+    """
+    (1, 'hello')
+    (2, 'my')
+    (3, 'name')
+    (4, 'is')
+    (5, 'Evan')
+    """
