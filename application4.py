@@ -121,3 +121,25 @@ print("pass statement used here")
 
 for object in ['computer', 'car', 'bottle', 'tv']:
     print(object)
+    
+# 5. While Loops
+
+# while something is true, do something
+# while <condition is true>:
+#   # do something
+# else
+#   # do something else...
+
+x = 0
+
+while x < 10:
+    print(x)
+    # x = x + 1 is the same as below
+    x += 3 # add whatever number on the right.. as soon as it hits 10 it will print the else
+    
+    if(x == 6):
+        continue # will not skip 6 because we are printing before this happens
+    
+else:
+    print("x is not less than 10")
+    
