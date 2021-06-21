@@ -259,3 +259,11 @@ big_list = list(range(101))
 shuffle(big_list)
 print(big_list)
 
+# 9. Accepting Input from a User
+
+name = input('Enter your name: ')
+print("Hello there " + name.strip()) # strip removes any white spaces
+
+age = input('Enter your age: ') # input returns a string not an integer
+print(name.strip() + "... you are " + str(age.strip()) + " years old")
+print(name.strip() + "... you will be " + str(5 + int(age)) + " in 5 years")
