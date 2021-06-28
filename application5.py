@@ -42,3 +42,31 @@ print(car2.vehicle_make)
 
 print(type(car1))
 # -> <class '__main__.Vehicle'>
+
+# 3. Classes Attributes vs Object Attributes
+
+class NewVehicle:
+
+	# the color should not be changed outside of the class specification.
+	# this is a class attribute
+	color = 'red'
+	vehicle_counter = 0
+	
+	def __init__(self, body_type, make): # <- !!important!!
+		# specify the attributes of the vehicle here
+		self.vehicle_body = body_type # must use self to be able to use it on objects like car1 and car2
+		self.vehicle_make = make
+		NewVehicle.vehicle_counter += 1
+
+	def get_vehicle_count(self):
+		return NewVehicle.vehicle_counter
+
+car1 = NewVehicle('Sedan', 'Toyota') # -> This is how you would initialize a vehicle
+print(car1.vehicle_body)
+print(car1.vehicle_make)
+
+car2 = NewVehicle('SUV', 'Subaru')
+print(car2.vehicle_body)
+print(car2.vehicle_make)
+
+print(car1.vehicle_counter)
