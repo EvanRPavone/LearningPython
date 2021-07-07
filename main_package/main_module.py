@@ -1,6 +1,7 @@
-from another_module import greet_user
+from main_package.sub_package import another_module
 # another file is considered as a module
-greet_user()
+def main_func():
+    another_module.greet_user()
 """
 In the command line:
 cd to where your file is
